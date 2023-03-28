@@ -1,8 +1,8 @@
  
  ################### Logwatch 7.5.6 (07/23/21) #################### 
-        Processing Initiated: Mon Mar 20 11:38:09 2023
+        Processing Initiated: Tue Mar 28 22:23:04 2023
         Date Range Processed: between -90 days and today
-                              ( 2022-Dec-20 / 2023-Mar-20 )
+                              ( 2022-Dec-28 / 2023-Mar-28 )
                               Period is day.
         Detail Level of Output: 0
         Type of Output/Format: stdout / text
@@ -575,9 +575,9 @@
  --------------------- Disk Space Begin ------------------------ 
 
  Filesystem      Size  Used Avail Use% Mounted on
- rootfs          183G  150G   34G  82% /
- C:\             183G  150G   34G  82% /mnt/c
- D:\             293G  157G  137G  54% /mnt/d
+ rootfs          183G  146G   38G  80% /
+ C:\             183G  146G   38G  80% /mnt/c
+ D:\             293G  159G  134G  55% /mnt/d
  
  
  ---------------------- Disk Space End ------------------------- 
