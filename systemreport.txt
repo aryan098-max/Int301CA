@@ -1,8 +1,8 @@
  
  ################### Logwatch 7.5.6 (07/23/21) #################### 
-        Processing Initiated: Wed Mar 29 23:00:39 2023
+        Processing Initiated: Thu Mar 30 19:36:45 2023
         Date Range Processed: between -90 days and today
-                              ( 2022-Dec-29 / 2023-Mar-29 )
+                              ( 2022-Dec-30 / 2023-Mar-30 )
                               Period is day.
         Detail Level of Output: 0
         Type of Output/Format: stdout / text
@@ -149,6 +149,7 @@
     libctf0:amd64 2.38-4ubuntu2.1
     libcurl3-gnutls:amd64 7.81.0-1ubuntu1.6
     libcurl4:amd64 7.81.0-1ubuntu1.6
+    libdate-manip-perl:all 6.86-1
     libdate-manip-perl:all 6.86-1
     libdb5.3:amd64 5.3.28+dfsg1-0.8ubuntu3
     libdbus-1-3:amd64 1.12.20-2ubuntu4
@@ -337,6 +338,9 @@
     logrotate:amd64 3.19.0-1ubuntu1
     logsave:amd64 1.46.5-2ubuntu1
     logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
     lsb-base:all 11.1.0ubuntu4
     lsb-release:all 11.1.0ubuntu4
     lshw:amd64 02.19.git.2021.06.19.996aaad9c7-2build1
@@ -490,6 +494,7 @@
     dpkg 1.21.1ubuntu2
     dpkg:amd64 1.21.1ubuntu2
     libc6:amd64 2.35-0ubuntu3
+    logwatch:all 7.5.6-1ubuntu1
     mawk:amd64 1.3.4.20200120-3
     perl-base:amd64 5.34.0-3ubuntu1
  
@@ -569,14 +574,73 @@
     xxd:amd64 2:8.2.3995-1ubuntu2 => 2:8.2.3995-1ubuntu2.1
     zlib1g:amd64 1:1.2.11.dfsg-2ubuntu9 => 1:1.2.11.dfsg-2ubuntu9.2
  
+ Removed:
+    libdate-manip-perl:all 6.86-1
+    logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
+ 
+ Purged:
+    logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
+    logwatch:all 7.5.6-1ubuntu1
+ 
  ---------------------- dpkg status changes End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       root (192.168.1.100): 5 Time(s)
+ 
+ sudo:
+    Authentication Failures:
+       myusername(1000) -> myusername: 1 Time(s)
+    Not Identify Password For:
+       myusername: 1 Time(s)
+    Sessions Opened:
+       myusername -> root: 1 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Disconnecting after too many authentication failures for user:
+    root : 1 Time
+ 
+ Failed logins from:
+    192.168.1.100: 3 Times
+ 
+ Users logging in through sshd:
+    myusername:
+       192.168.1.100: 1 Time
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Sudo (secure-log) Begin ------------------------ 
+
+ 
+ myusername => root
+ ------------------
+ /usr/bin/apt-get               -   1 Time(s).
+ 
+ Conversation failed with:
+ -------------------------
+ pam_unix(sudo:auth)            -   1 Time(s)
+ 
+ ---------------------- Sudo (secure-log) End ------------------------- 
 
  
  --------------------- Disk Space Begin ------------------------ 
 
  Filesystem      Size  Used Avail Use% Mounted on
- rootfs          183G  148G   36G  81% /
- C:\             183G  148G   36G  81% /mnt/c
+ rootfs          183G  147G   36G  81% /
+ C:\             183G  147G   36G  81% /mnt/c
  D:\             293G  159G  134G  55% /mnt/d
  
  
