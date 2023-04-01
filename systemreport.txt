@@ -1,8 +1,8 @@
  
  ################### Logwatch 7.5.6 (07/23/21) #################### 
-        Processing Initiated: Thu Mar 30 20:34:35 2023
+        Processing Initiated: Sat Apr  1 22:24:05 2023
         Date Range Processed: between -90 days and today
-                              ( 2022-Dec-30 / 2023-Mar-30 )
+                              ( 2023-Jan-01 / 2023-Apr-01 )
                               Period is day.
         Detail Level of Output: 0
         Type of Output/Format: stdout / text
@@ -588,59 +588,11 @@
  ---------------------- dpkg status changes End ------------------------- 
 
  
- --------------------- pam_unix Begin ------------------------ 
-
- sshd:
-    Authentication Failures:
-       root (192.168.1.100): 5 Time(s)
- 
- sudo:
-    Authentication Failures:
-       myusername(1000) -> myusername: 1 Time(s)
-    Not Identify Password For:
-       myusername: 1 Time(s)
-    Sessions Opened:
-       myusername -> root: 1 Time(s)
- 
- 
- ---------------------- pam_unix End ------------------------- 
-
- 
- --------------------- SSHD Begin ------------------------ 
-
- 
- Disconnecting after too many authentication failures for user:
-    root : 1 Time
- 
- Failed logins from:
-    192.168.1.100: 3 Times
- 
- Users logging in through sshd:
-    myusername:
-       192.168.1.100: 1 Time
- 
- ---------------------- SSHD End ------------------------- 
-
- 
- --------------------- Sudo (secure-log) Begin ------------------------ 
-
- 
- myusername => root
- ------------------
- /usr/bin/apt-get               -   1 Time(s).
- 
- Conversation failed with:
- -------------------------
- pam_unix(sudo:auth)            -   1 Time(s)
- 
- ---------------------- Sudo (secure-log) End ------------------------- 
-
- 
  --------------------- Disk Space Begin ------------------------ 
 
  Filesystem      Size  Used Avail Use% Mounted on
- rootfs          183G  147G   36G  81% /
- C:\             183G  147G   36G  81% /mnt/c
+ rootfs          183G  151G   33G  83% /
+ C:\             183G  151G   33G  83% /mnt/c
  D:\             293G  159G  134G  55% /mnt/d
  
  
