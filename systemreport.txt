@@ -1,8 +1,8 @@
  
  ################### Logwatch 7.5.6 (07/23/21) #################### 
-        Processing Initiated: Fri Apr  7 20:26:18 2023
+        Processing Initiated: Sun Apr  9 22:42:48 2023
         Date Range Processed: between -90 days and today
-                              ( 2023-Jan-07 / 2023-Apr-07 )
+                              ( 2023-Jan-09 / 2023-Apr-09 )
                               Period is day.
         Detail Level of Output: 0
         Type of Output/Format: stdout / text
@@ -17,10 +17,12 @@
     cpp:amd64 4:11.2.0-1ubuntu1
     fontconfig-config:all 2.13.1-4.2ubuntu5
     fonts-dejavu-core:all 2.37-2build1
+    foremost:amd64 1.5.7-11
     gcc-11-base:amd64 11.3.0-1ubuntu1~22.04
     gcc-11:amd64 11.3.0-1ubuntu1~22.04
     gcc:amd64 4:11.2.0-1ubuntu1
     gdb:amd64 12.1-0ubuntu1~22.04
+    hwinfo:amd64 21.72-1
     libasan6:amd64 11.3.0-1ubuntu1~22.04
     libatomic1:amd64 12.1.0-2ubuntu1~22.04
     libbabeltrace1:amd64 1.5.8-2build1
@@ -41,6 +43,7 @@
     libgcc-11-dev:amd64 11.3.0-1ubuntu1~22.04
     libgd3:amd64 2.3.0-2ubuntu2
     libgomp1:amd64 12.1.0-2ubuntu1~22.04
+    libhd21:amd64 21.72-1
     libipt2:amd64 2.0.5-1
     libisl23:amd64 0.24-2build1
     libitm1:amd64 12.1.0-2ubuntu1~22.04
@@ -58,6 +61,7 @@
     libtsan0:amd64 11.3.0-1ubuntu1~22.04
     libubsan1:amd64 12.1.0-2ubuntu1~22.04
     libwebp7:amd64 1.2.2-2
+    libx86emu3:amd64 3.1-2
     libxpm4:amd64 1:3.5.12-1ubuntu0.22.04.1
     linux-libc-dev:amd64 5.15.0-60.66
     logwatch:all 7.5.6-1ubuntu1
@@ -69,6 +73,7 @@
     rcs:amd64 5.10.1-1
     rpcsvc-proto:amd64 1.4.2-0ubuntu6
     rsyslog-gnutls:amd64 8.2112.0-2ubuntu2.2
+    scalpel:amd64 1.60-9
     ssl-cert:all 1.1.2
  
  Reinstalled:
@@ -91,8 +96,8 @@
  --------------------- Disk Space Begin ------------------------ 
 
  Filesystem      Size  Used Avail Use% Mounted on
- rootfs          183G  144G   40G  79% /
- C:\             183G  144G   40G  79% /mnt/c
+ rootfs          183G  147G   37G  80% /
+ C:\             183G  147G   37G  80% /mnt/c
  D:\             293G  174G  120G  60% /mnt/d
  
  
